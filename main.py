@@ -46,7 +46,7 @@ Observe que o professor irá testar seu programa com os arquivos de testes que v
 no mínimo um arquivo de testes criado pelo próprio professor.
 '''
 
-from leitura_arquivo import ler_conjunto
+from leitura_arquivo import ler_conjunto, ler_operacao
 from itertools import product
 
 NOME_ARQUIVO_TESTE = "teste01.txt"
@@ -54,7 +54,7 @@ arquivo_teste = open(NOME_ARQUIVO_TESTE, "r")
 
 numero_operacoes = int(arquivo_teste.readline())
 for i in range(numero_operacoes):
-   operacao = arquivo_teste.readline().strip().upper()
+   operacao = ler_operacao(arquivo_teste)
 
    conjunto1 = ler_conjunto(arquivo_teste)
    conjunto2 = ler_conjunto(arquivo_teste)
