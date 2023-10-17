@@ -56,8 +56,9 @@ numero_operacoes = int(arquivo_teste.readline())
 for i in range(numero_operacoes):
    operacao = ler_operacao(arquivo_teste)
 
-   conjunto1 = ler_conjunto(arquivo_teste)
-   conjunto2 = ler_conjunto(arquivo_teste)
+   SEPARADOR_ELEMENTOS = ','
+   conjunto1 = ler_conjunto(arquivo_teste, SEPARADOR_ELEMENTOS)
+   conjunto2 = ler_conjunto(arquivo_teste, SEPARADOR_ELEMENTOS)
 
    UNIAO = 'U'
    INTERSECAO = 'I'
