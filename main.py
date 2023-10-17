@@ -67,21 +67,21 @@ for i in range(numero_operacoes):
    operacao_valida = True
    if (operacao == UNIAO):
       conjunto_resultado = conjunto1 | conjunto2
-      print("União:", end="")
+      print("União", end="")
    elif (operacao == INTERSECAO):
       conjunto_resultado = conjunto1 & conjunto2
-      print("Interseção:", end="")
+      print("Interseção", end="")
    elif (operacao == DIFERENCA):
       conjunto_resultado = conjunto1 - conjunto2
-      print("Diferença:", end="")
+      print("Diferença", end="")
    elif (operacao == PRODUTO_CARTESIANO):
       conjunto_resultado = set(product(conjunto1, conjunto2))
-      print("Produto cartesiano:", end="")
+      print("Produto cartesiano", end="")
    else:
       operacao_valida = False
       print("Operação inválida!")
 
    if (operacao_valida):
-      print(f" conjunto 1 {conjunto1}, conjunto 2 {conjunto2}. Resultado: {conjunto_resultado}")
+      print(f": conjunto 1 {conjunto1}, conjunto 2 {conjunto2}. Resultado: {conjunto_resultado}")
 
 arquivo_teste.close()
