@@ -1,3 +1,10 @@
+'''
+T(1) = 1
+T(2) = 2
+T(3) = 3
+T(n) = T(n - 1) + 2 * T(n - 2) + 3 * T(n - 3), para n > 3
+'''
+
 def T(n):
    if (n == 1):
       return 1
@@ -7,7 +14,5 @@ def T(n):
       return 3
    return T(n - 1) + 2 * T(n - 2) + 3 * T(n - 3)
 
-print(T(1))
-print(T(2))
-print(T(3))
-print(T(10))
+for n in range(1, 11):
+   print(f"T({n}) = {T(n)}")
