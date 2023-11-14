@@ -1,4 +1,3 @@
-# Stéphano Roccato Trevisan
 '''
 Para obter os pontos relativos a este trabalho, você deverá criar um programa, utilizando a
 linguagem Python, C, ou C++. Este programa, quando executado, irá apresentar os resultados de

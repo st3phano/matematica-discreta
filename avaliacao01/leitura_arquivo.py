@@ -1,5 +1,3 @@
-# Stéphano Roccato Trevisan
-
 def ler_conjunto(arquivo, separador_elementos):
    conjunto = arquivo.readline()
 
